@@ -43,6 +43,7 @@ document.onkeyup = function(event) {
 	counterGuesses ++;
 	// Descrease counterGuessesLeft by one
 	counterGuessesLeft --;
+	console.log(counterGuessesLeft);
 
 	document.getElementById("guesses_left").innerHTML = "Guesses Left: "+counterGuessesLeft;
 	document.getElementById("guesses_so_far").innerHTML = "Your Guesses so far: "+guesses;
@@ -50,7 +51,7 @@ document.onkeyup = function(event) {
 
 function reset() {
 	// Reset to default values
-	counterGuesses = 1;
+	counterGuesses = 0;
 	guesses = "";
-	counterGuessesLeft = 9;
+	counterGuessesLeft = 10;
 }
